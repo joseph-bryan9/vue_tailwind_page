@@ -1,10 +1,13 @@
 <template>
   <nav>
-    <ul class="flex justify-between capitalize ">
-      <li v-for="navList in navLists" :key="navList.id" class="text-xl">
-        <router-link :to="navList.to">{{ navList.menu }}</router-link>
-      </li>
-    </ul>
+    <div class="grid grid-cols-2 p-10 mx-40">
+      <img src="../assets/thebarberbros_logo.png" alt="thebarberbros" class="w-40">
+      <ul class="flex justify-around items-center capitalize">
+        <li v-for="navList in navLists" :key="navList.id" class="text-xl">
+          <router-link :to="navList.to">{{ navList.menu }}</router-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
