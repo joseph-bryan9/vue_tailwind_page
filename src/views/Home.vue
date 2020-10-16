@@ -6,7 +6,7 @@
     <Shop />
     <Testimonial />
     <Appointment />
-    <!-- <Contact /> -->
+    <Contact />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import Team from "@/components/Team.vue";
 import Shop from "@/components/Shop.vue";
 import Testimonial from "@/components/Testimonial.vue";
 import Appointment from "@/components/Appointment.vue";
-// import Contact from "@/components/Contact.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
@@ -31,7 +31,7 @@ export default {
     Shop,
     Testimonial,
     Appointment,
-    // Contact
+    Contact
   },
 };
 </script>

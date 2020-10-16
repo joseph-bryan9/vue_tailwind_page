@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <div class="grid grid-cols-2 p-10 mx-40">
-      <img src="../assets/thebarberbros_logo.png" alt="thebarberbros" class="w-40">
-      <ul class="flex justify-around items-center capitalize">
-        <li v-for="navList in navLists" :key="navList.id" class="text-xl">
+  <nav class="z-20 absolute w-full">
+    <div class="grid p-5 pt-10 sm:mx-0 lg:mx-0 xl:mx-32 bg-transparent">
+      <!-- <a href="#"><img src="../assets/thebarberbros_logo.png" alt="thebarberbros" class="w-40"></a> -->
+      <ul class="hidden lg:flex justify-around items-center capitalize">
+        <li v-for="navList in navLists" :key="navList.id" class="text-2xl text-cust-white tracking-wide">
           <router-link :to="navList.to">{{ navList.menu }}</router-link>
         </li>
       </ul>
