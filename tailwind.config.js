@@ -18,6 +18,13 @@ module.exports = {
       spacing: {
         '70': '800px',
       },
+      inset: {
+        'border': '86vh',
+        'border-2': '186vh',
+      },
+      scale: {
+        'upside-down': '-1',
+      },
     }
   },
   variants: {},
