@@ -1,12 +1,12 @@
 <template>
     <section class="flex flex-col items-center p-10 py-20" :style="{ 'background-image': 'url(' + bgImage + ')'}">
-        <div class="absolute w-full h-40 z-10 top-border" :style="{ 'background-image': 'url(' + divider + ')'}"></div>
+        <!-- <div class="absolute w-full h-40 z-10 top-border" :style="{ 'background-image': 'url(' + divider + ')'}"></div> -->
         <img :src="logo" alt="thebarberbros" class="w-56 min-w-40">
         <h1 class="capitalize text-3xl text-center my-10 lg:text-5xl font-black tracking-wide">{{ tagLine }}</h1>
         <p class="text-base text-center w-70 mb-10 leading-8">{{ about1 }}</p>
         <p class="text-base text-center w-70 mb-5 leading-8">{{ about1 }}</p>
-        <a href="#" class="w-full text-3xl text-center capitalize my-10 pt-12 bg-no-repeat bg-center h-32 text-cust-white min-h-10 table-cell align-middle" :style="{ 'background-image': 'url(' + hrefBg + ')'}">{{ href }}</a>
-        <div class="absolute w-full h-40 z-10 top-border-2 transform rotate-180" :style="{ 'background-image': 'url(' + divider + ')'}"></div>
+        <a href="#" class="w-full text-3xl text-center capitalize my-10 pt-12 bg-no-repeat bg-center bg-contain h-32 text-cust-white min-h-10 table-cell align-middle" :style="{ 'background-image': 'url(' + hrefBg + ')'}">{{ href }}</a>
+        <!-- <div class="absolute w-full h-40 z-10 bottom-bottom transform rotate-180" :style="{ 'background-image': 'url(' + divider + ')'}"></div> -->
     </section>
 </template>
 

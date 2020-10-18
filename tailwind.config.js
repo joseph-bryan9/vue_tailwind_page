@@ -20,10 +20,15 @@ module.exports = {
       },
       inset: {
         'border': '86vh',
-        'border-2': '186vh',
+        'bottom': '-102vh',
+        'border-2': '102vh',
+        'border-3': '300vh',
       },
       scale: {
         'upside-down': '-1',
+      },
+      borderRadius: {
+        'full-rounded': '50%',
       },
     }
   },
