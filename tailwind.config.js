@@ -19,10 +19,11 @@ module.exports = {
         '70': '800px',
       },
       inset: {
-        'border': '86vh',
-        'bottom': '-102vh',
-        'border-2': '102vh',
-        'border-3': '300vh',
+        'border': '-16vh',
+        'bottom': '-12vh',
+        'bottom-2': '-15vh',
+        'apostrophe-top': '-10px',
+        'apostrophe-left': '-20px'
       },
       scale: {
         'upside-down': '-1',

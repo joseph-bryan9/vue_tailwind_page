@@ -1,10 +1,10 @@
 <template>
-    <section class="flex flex-col items-center p-10 py-20 bg-red-900">
+    <section class="flex flex-col items-center p-10 py-20 bg-gradient-to-b from-red-900 to-red-800">
         <p class="capitalize text-3xl text-center text-cust-white my-10 lg:text-5xl">{{ barbers1 }} <span class="text-cust-red">{{ barbers2 }}</span> </p>
             <div class="grid grid-cols-1 md:grid-cols-4 my-5">
                 <div class="flex flex-wrap justify-center" :class="{ 'pt-10': staff.id == 2, 'pt-40': staff.id == 3 }" v-for="staff in staffs" :key="staff.id">
                     <div class="w-6/12 sm:w-4/12 px-1">
-                        <img :src="staff.img" alt="barber" class="rounded-full-rounded" />
+                        <img :src="staff.img" alt="barber" class="rounded-full-rounded hover:shadow-2xl" />
                         <p class="text-center text-xl text-cust-white my-5 w-full tracking-wide">{{ staff.name }}</p>
                     </div>
                 </div>
