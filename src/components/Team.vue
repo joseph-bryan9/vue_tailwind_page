@@ -34,7 +34,7 @@ export default {
 
 p, span {
   font-family: 'Lobster', cursive;
-  text-shadow: 0px 4px 6px #000;
+  text-shadow: 0px 3px 4px #000;
 }
 
 </style>
