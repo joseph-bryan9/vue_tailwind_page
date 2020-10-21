@@ -2,10 +2,10 @@
   <div class="home">
     <Hero />
     <About />
-    <Team />
     <Shop />
-    <Testimonial />
     <Appointment />
+    <Team />
+    <Testimonial />
     <Contact />
   </div>
 </template>

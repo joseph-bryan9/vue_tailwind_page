@@ -1,10 +1,12 @@
 <template>
-    <section class="flex flex-col items-center p-10 py-20 bg-gradient-to-b from-red-900 to-red-800">
-        <p class="capitalize text-3xl text-center text-cust-white my-10 lg:text-5xl">{{ barbers1 }} <span class="text-cust-red">{{ barbers2 }}</span> </p>
-            <div class="grid grid-cols-1 md:grid-cols-4 my-5">
-                <div class="flex flex-wrap justify-center" :class="{ 'pt-10': staff.id == 2, 'pt-40': staff.id == 3 }" v-for="staff in staffs" :key="staff.id">
+    <!-- <section class="flex flex-col items-center p-10 py-20"> -->
+    <section class="flex flex-col justify-center items-center h-screen bg-cover bg-center bg-fixed top-0 left-0 relative w-full z-10" :style="{ 'background-image': 'url(' + hero + ')'}">
+        <div class="absolute inset-0 bg-black opacity-75 h-full z-10"></div>
+        <p class="capitalize text-3xl text-center text-cust-white my-10 relative z-20 lg:text-5xl">{{ barbers1 }} <span class="text-cust-red">{{ barbers2 }}</span> </p>
+            <div class="grid grid-cols-1 md:grid-cols-4 my-5 relative z-20">
+                <div class="flex flex-wrap justify-center" v-for="staff in staffs" :key="staff.id">
                     <div class="w-6/12 sm:w-4/12 px-1">
-                        <img :src="staff.img" alt="barber" class="rounded-full-rounded hover:shadow-2xl" />
+                        <img :src="staff.img" alt="barber" class="rounded-full-rounded shadow-xl hover:shadow-2xl" />
                         <p class="text-center text-xl text-cust-white my-5 w-full tracking-wide">{{ staff.name }}</p>
                     </div>
                 </div>
@@ -19,6 +21,7 @@ export default {
         return {
             barbers1: 'the ',
             barbers2: 'barbers',
+            hero: require('../assets/barber-hero2.jpg'),
             staffs: [
                 { id: 1, img: require('../assets/barber-1.jpg', ), name: 'Elbert Owen' },
                 { id: 2, img: require('../assets/barber-2.jpg', ), name: 'Ray Phillips' },

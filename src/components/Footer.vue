@@ -1,7 +1,7 @@
 <template>
     <section>
         <!-- component -->
-        <div class="bg-gray-100">
+        <div :style="{ 'background-image': 'url(' + bgImage + ')'}">
         <div class="flex flex-wrap sm:max-w-6xl sm:m-auto sm:text-gray-800 sm:flex sm:justify-center">
             <div class="p-5 mx-10 w-48 ">
                 <img src="../assets/thebarberbros_logo.png" alt="thebarberbros" class="w-40">
@@ -110,3 +110,14 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    name: 'About',
+    data() {
+        return {
+            bgImage: require('../assets/pattern.jpg'),
+        }
+    }
+}
+</script>

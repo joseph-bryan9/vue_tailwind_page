@@ -6,7 +6,7 @@
         <p class="text-base text-center w-70 mb-10 leading-8">{{ about1 }}</p>
         <p class="text-base text-center w-70 mb-5 leading-8">{{ about1 }}</p>
         <a href="#" class="w-full text-3xl text-center capitalize my-10 pt-12 bg-no-repeat bg-center bg-contain h-32 text-cust-white min-h-10 table-cell align-middle relative" :style="{ 'background-image': 'url(' + hrefBg + ')'}">{{ href }}</a>
-        <div class="absolute w-full h-40 z-10 bottom-bottom transform rotate-180 bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div>
+        <!-- <div class="absolute w-full h-40 z-10 bottom-bottom transform rotate-180 bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div> -->
     </section>
 </template>
 

@@ -1,11 +1,12 @@
 <template>
-    <section class="flex flex-col items-center p-10 py-20 bg-yellow-100">
-        <p class="uppercase text-3xl text-center my-10 lg:text-5xl">Get in touch</p>
+    <section class="flex flex-col items-center p-10 py-20 relative" :style="{ 'background-image': 'url(' + bgImage + ')'}">
+        <div class="absolute w-full h-40 z-10 top-border bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div>
+        <h2 class="capitalize text-3xl text-center my-10 lg:text-5xl text-cust-white">Get in <span class="text-cust-red">touch</span></h2>
         <!-- component -->
         <div class="relative flex items-top justify-center bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="mt-8 overflow-hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 pb-8">
                         <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
                             <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
                                 Fill in the form to start a conversation
@@ -43,21 +44,30 @@
 
                         <form class="p-6 flex flex-col justify-center">
                             <div class="flex flex-col">
-                                <label for="name" class="hidden">Full Name</label>
-                                <input type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                                <label for="name" class="block uppercase tracking-wide text-gray-700 text-xs font-bold">Full Name</label>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <input type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-1 py-3 px-4 rounded-lg bg-white text-gray-700 border border-gray-500 leading-tight font-semibold focus:outline-none">
                             </div>
 
-                            <div class="flex flex-col mt-2">
-                                <label for="email" class="hidden">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            <div class="flex flex-col mt-5">
+                                <label for="email" class="block uppercase tracking-wide text-gray-700 text-xs font-bold">Email</label>
                             </div>
 
-                            <div class="flex flex-col mt-2">
-                                <label for="tel" class="hidden">Number</label>
-                                <input type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            <div class="flex flex-col">
+                                <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-1 py-3 px-4 rounded-lg bg-white text-gray-700 border border-gray-500 leading-tight font-semibold focus:outline-none">
                             </div>
 
-                            <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                            <div class="flex flex-col mt-5">
+                                <label for="tel" class="block uppercase tracking-wide text-gray-700 text-xs font-bold">Number</label>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <input type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-1 py-3 px-4 rounded-lg bg-white text-gray-700 border border-gray-500 leading-tight font-semibold focus:outline-none">
+                            </div>
+
+                            <button type="submit" class="bg-red-700 hover:bg-red-800 text-white font-bold mt-6 py-2 px-4 border border-red-700 rounded capitalize w-6/12 tracking-wide block m-auto">
                                 Submit
                             </button>
                         </form>
@@ -67,3 +77,23 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    name: 'About',
+    data() {
+        return {
+            divider: require('../assets/border_1.png'),
+            bgImage: require('../assets/pattern.jpg'),
+        }
+    }
+}
+</script>
+
+<style scoped>
+h2, span {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lobster', cursive;
+  text-shadow: 0px 3px 4px #000;
+}
+</style>

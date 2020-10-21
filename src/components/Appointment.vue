@@ -1,6 +1,6 @@
 <template>
     <section class="flex flex-col items-center p-10 py-20 relative" :style="{ 'background-image': 'url(' + bgImage + ')'}">
-        <div class="absolute w-full h-40 z-10 top-border bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div>
+        <!-- <div class="absolute w-full h-40 z-10 top-border bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div> -->
         <h2 class="capitalize text-3xl text-center my-10 lg:text-5xl tracking-wide text-cust-white">{{ title1 }} <span class="text-cust-red">{{ title2 }}</span></h2>
         <form class="w-full max-w-6xl grid grid-cols-2 gap-16">
             <div>
@@ -88,38 +88,44 @@
                 <input class="uppercase appearance-none block w-full bg-white text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none" id="grid-data" type="date">
                 </div>
             </div>
-            <div class="mt-2 p-5 w-40 bg-white rounded-lg shadow-xl">
-  <div class="flex">
-    <select name="hours" class="bg-transparent text-xl appearance-none outline-none">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">10</option>
-      <option value="12">12</option>
-    </select>
-    <span class="text-xl mr-3">:</span>
-    <select name="minutes" class="bg-transparent text-xl appearance-none outline-none mr-4">
-      <option value="0">00</option>
-      <option value="30">30</option>
-    </select>
-    <select name="ampm" class="bg-transparent text-xl appearance-none outline-none">
-      <option value="am">AM</option>
-      <option value="pm">PM</option>
-    </select>
-  </div>
-</div>
-            <button class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 border border-red-700 rounded capitalize w-6/12 block m-auto tracking-wide">
+            <div class="flex flex-wrap -mx-3 ">
+                <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    Choose your time:
+                </label>
+                </div>
+            </div>
+            <div class="py-3 px-4 mb-3 w-40 bg-white text-gray-700 border border-gray-500 rounded ">
+                <div class="flex">
+                    <select name="hours" class="bg-transparent appearance-none outline-none">
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    </select>
+                    <span class="mr-3">:</span>
+                    <select name="minutes" class="bg-transparent appearance-none outline-none mr-4">
+                    <option value="0">00</option>
+                    <option value="30">30</option>
+                    </select>
+                    <select name="ampm" class="bg-transparent appearance-none outline-none">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                    </select>
+                </div>
+            </div>
+            <button class="bg-red-700 hover:bg-red-800 text-white font-bold mt-6 py-2 px-4 border border-red-700 rounded capitalize w-6/12 tracking-wide">
   send
 </button>
             </div>
         </form>
+        <div class="absolute w-full h-40 z-20 bottom-bottom-2 transform rotate-180 bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div>
     </section>
 </template>
 
@@ -141,7 +147,7 @@ export default {
 h2, span {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Lobster', cursive;
-  text-shadow: 0px 3px 6px #000;
+  text-shadow: 0px 3px 4px #000;
 }
 
 button {
