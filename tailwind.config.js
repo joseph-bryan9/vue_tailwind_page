@@ -18,6 +18,9 @@ module.exports = {
       spacing: {
         '70': '800px',
       },
+      margin: {
+        '13.5': '3.3rem',
+      },
       inset: {
         'border': '-16vh',
         'bottom': '-12vh',

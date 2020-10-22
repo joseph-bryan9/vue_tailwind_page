@@ -1,8 +1,8 @@
 <template>
-    <section class="flex flex-col items-center p-10 py-20 relative" :style="{ 'background-image': 'url(' + bgImage + ')'}">
+    <section class="flex flex-col items-center p-10 py-20 relative border-t" :style="{ 'background-image': 'url(' + bgImage + ')'}">
         <!-- <div class="absolute w-full h-40 z-10 top-border bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div> -->
         <p class="capitalize text-3xl text-center my-10 lg:text-5xl text-cust-white tracking-wide">{{ title1 }} <span class="text-cust-red">{{ title2 }}</span> </p>
-        <div class="grid grid-cols-5 grid-rows-2 gap-5 px-64 relative">
+        <div class="grid grid-cols-5 grid-rows-2 gap-5 px-64 pb-20 relative">
         <div class="col-span-2 row-start-1 row-end-3 shadow-xl">
             <img src="../assets/barbershop-1.jpg" alt="barbershop" class="rounded w-full h-full hover:shadow-2xl">
         </div>

@@ -7,24 +7,27 @@
                 <img src="../assets/thebarberbros_logo.png" alt="thebarberbros" class="w-40">
             </div>
             <div class="p-5 mx-10 w-48 ">
-                <div class="text-xs uppercase text-gray-500 font-medium">Home</div>
-                <a class="my-3 block capitalize" href="/#">about us <span class="text-teal-600 text-xs p-1"></span></a>
-                <a class="my-3 block capitalize" href="/#">services <span class="text-teal-600 text-xs p-1"></span></a>
-                <a class="my-3 block capitalize" href="/#">appointments <span class="text-teal-600 text-xs p-1"></span></a>
-                <a class="my-3 block capitalize" href="/#">contact us <span class="text-teal-600 text-xs p-1"></span></a>
+                <div class="uppercase text-gray-900"><span>Home</span></div>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">about us</a>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">services</a>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">appointments</a>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">contact us</a>
             </div>
             <div class="p-5 mx-10 w-48 ">
-                <div class="text-xs uppercase text-gray-500 font-medium">Support</div>
-                <a class="my-3 block" href="/#">Help Center <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Privacy Policy <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Conditions <span class="text-teal-600 text-xs p-1"></span></a> 
+                <div class="uppercase text-gray-900"><span>Support</span></div>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">help center</a>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">privacy policy</a>
+                <a class="my-3 block text-gray-800 hover:underline" href="/#">conditions</a> 
             </div>
             <div class="p-5 mx-10 w-48 ">
-                <div class="text-xs uppercase text-gray-500 font-medium">Contact us</div>
-                <a class="my-3 block" href="/#">XXX XXXX, Floor 4 San Francisco, CA <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">contact@company.com <span class="text-teal-600 text-xs p-1"></span></a> 
+                <div class="uppercase text-gray-900"><span>Contact us</span></div>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">XXX XXXX, Floor 4 San Francisco, CA</a>
+                <a class="my-3 block capitalize text-gray-800 hover:underline" href="/#">contact@company.com</a> 
             </div>
         </div>
         </div>
 
-        <div class="bg-gray-100 pt-2 ">
+        <div class="bg-gray-100 pt-2" :style="{ 'background-image': 'url(' + bgImage + ')'}">
         <div class="flex justify-center pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
             md:flex-row max-w-6xl">
             <div class="mt-2">© Copyright 2020. All Rights Reserved.</div>
@@ -121,3 +124,15 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+span {
+  font-family: 'Lobster', sans-serif;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+</style>

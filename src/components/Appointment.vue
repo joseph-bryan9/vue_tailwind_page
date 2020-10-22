@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col items-center p-10 py-20 relative" :style="{ 'background-image': 'url(' + bgImage + ')'}">
+    <section class="flex flex-col items-center p-10 py-20 relative border-t" :style="{ 'background-image': 'url(' + bgImage + ')'}">
         <!-- <div class="absolute w-full h-40 z-10 top-border bg-cover bg-center" :style="{ 'background-image': 'url(' + divider + ')'}"></div> -->
         <h2 class="capitalize text-3xl text-center my-10 lg:text-5xl tracking-wide text-cust-white">{{ title1 }} <span class="text-cust-red">{{ title2 }}</span></h2>
         <form class="w-full max-w-6xl grid grid-cols-2 gap-16">
@@ -70,8 +70,8 @@
                 </label>
                 </div>
             </div>
-            <div class="inline-block relative w-64 mb-16">
-                <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none">
+            <div class="inline-block relative w-64 mb-13.5">
+                <select class="block appearance-none w-full bg-white border border-gray-500 py-3 px-4 rounded focus:outline-none">
                     <option>Haircut</option>
                     <option>Hairstyling</option>
                     <option>Stylist</option>
